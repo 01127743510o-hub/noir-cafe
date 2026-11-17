@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
 
     // LANGUAGE SETTINGS
@@ -340,4 +339,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     });
+
 });
