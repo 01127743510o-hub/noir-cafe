@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="NOIR CAFÉ — Discover the art of coffee, handcrafted drinks, and elegant moments.">
+    <meta name="theme-color" content="#101010">
+    <meta name="author" content="NEXORA">
+
+    <title>NOIR CAFÉ | A Taste of Elegance</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="home">
+        <div class="container navbar">
+
+            <a href="#home" class="logo">
+                NOIR <span>CAFÉ</span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" data-i18n="navHome">Home</a>
+                <a href="#about" data-i18n="navAbout">About</a>
+                <a href="#menu" data-i18n="navMenu">Menu</a>
+                <a href="#gallery" data-i18n="navGallery">Gallery</a>
+                <a href="#contact" data-i18n="navContact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <button
+                    type="button"
+                    class="language-btn"
+                    id="language-toggle"
+                    aria-label="Change language">
+                    AR
+                </button>
+
+                <button
+                    type="button"
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+
+                <p class="hero-subtitle" data-i18n="heroSubtitle">
+                    COFFEE • MOMENTS • EXPERIENCE
+                </p>
+
+                <h1 data-i18n="heroTitle">
+                    A Taste of Elegance
+                </h1>
+
+                <p class="hero-description" data-i18n="heroDescription">
+                    Discover the art of coffee in a place designed for unforgettable moments.
+                </p>
+
+                <a href="#menu" class="primary-btn" data-i18n="heroButton">
+                    Explore Our Menu
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="about section-padding" id="about">
+
+            <div class="container about-content">
+
+                <div class="about-image">
+                    <img
+                        src="images/cafe-interior.jpg"
+                        alt="NOIR CAFÉ interior"
+                        loading="lazy">
+                </div>
+
+                <div class="about-text">
+
+                    <p class="section-subtitle" data-i18n="aboutSubtitle">
+                        OUR STORY
+                    </p>
+
+                    <h2 data-i18n="aboutTitle">
+                        More Than Just Coffee
+                    </h2>
+
+                    <p data-i18n="aboutDescription">
+                        At NOIR CAFÉ, we believe that every cup tells a story.
+                        We bring together premium coffee, elegant design, and
+                        a welcoming atmosphere to create a unique experience.
+                    </p>
+
+                    <a href="#menu" class="text-link" data-i18n="aboutButton">
+                        Discover More
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- MENU SECTION -->
+        <section class="menu-section section-padding" id="menu">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-subtitle" data-i18n="menuSubtitle">
+                        OUR MENU
+                    </p>
+
+                    <h2 data-i18n="menuTitle">
+                        Discover Our Selection
+                    </h2>
+
+                    <p data-i18n="menuDescription">
+                        Carefully crafted drinks and delicious treats.
+                    </p>
+
+                </div>
+
+
+                <div class="menu-grid">
+
+                    <!-- PRODUCT 1: ESPRESSO -->
+                    <article class="menu-card">
+
+                        <img
+                            src="images/espresso.jpg"
+                            alt="Espresso"
+                            loading="lazy">
+
+                        <div class="menu-card-content">
+
+                            <h3 data-i18n="product1">Espresso</h3>
+
+                            <p data-i18n="product1Description">
+                                Rich and bold classic espresso.
+                            </p>
+
+                            <span class="price">EGP 60</span>
+
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 2: CAPPUCCINO -->
+                    <article class="menu-card">
+
+                        <img
+                            src="images/cappuccino-coffee.jpg"
+                            alt="Cappuccino"
+                            loading="lazy">
+
+                        <div class="menu-card-content">
+
+                            <h3 data-i18n="product2">Cappuccino</h3>
+
+                            <p data-i18n="product2Description">
+                                Espresso with steamed milk and foam.
+                            </p>
+
+                            <span class="price">EGP 85</span>
+
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 3: CAFFE LATTE -->
+                    <article class="menu-card">
+
+                        <img
+                            src="images/caffe-latte.jpg"
+                            alt="Caffè Latte"
+                            loading="lazy">
+
+                        <div class="menu-card-content">
+
+                            <h3 data-i18n="product3">Caffè Latte</h3>
+
+                            <p data-i18n="product3Description">
+                                Smooth espresso blended with milk.
+                            </p>
+
+                            <span class="price">EGP 90</span>
+
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 4: SPANISH LATTE -->
+                    <article class="menu-card">
+
+                        <img
+                            src="images/spanish-latte.jpg"
+                            alt="Spanish Latte"
+                            loading="lazy">
+
+                        <div class="menu-card-content">
+
+                            <h3 data-i18n="product4">Spanish Latte</h3>
+
+                            <p data-i18n="product4Description">
+                                A creamy coffee with a sweet touch.
+                            </p>
+
+                            <span class="price">EGP 105</span>
+
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 5: ICED AMERICANO -->
+                    <article class="menu-card">
+
+                        <img
+                            src="images/iced-americano.jpg"
+                            alt="Iced Americano"
+                            loading="lazy">
+
+                        <div class="menu-card-content">
+
+                            <h3 data-i18n="product5">Iced Americano</h3>
+
+                            <p data-i18n="product5Description">
+                                Refreshing espresso served over ice.
+                            </p>
+
+                            <span class="price">EGP 75</span>
+
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 6: CHOCOLATE CAKE -->
+                    <article class="menu-card">
+
+                        <img
+                            src="images/chocolate-cake.jpg"
+                            alt="Chocolate Cake"
+                            loading="lazy">
+
+                        <div class="menu-card-content">
+
+                            <h3 data-i18n="product6">Chocolate Cake</h3>
+
+                            <p data-i18n="product6Description">
+                                A delicious chocolate dessert.
+                            </p>
+
+                            <span class="price">EGP 95</span>
+
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 7: MOCHA -->
+                    <article class="menu-card">
+
+                        <img
+                            src="images/mocha.jpg"
+                            alt="Mocha"
+                            loading="lazy">
+
+                        <div class="menu-card-content">
+
+                            <h3 data-i18n="product7">Mocha</h3>
+
+                            <p data-i18n="product7Description">
+                                A rich blend of espresso and chocolate.
+                            </p>
+
+                            <span class="price">EGP 100</span>
+
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 8: CARAMEL MACCHIATO -->
+                    <article class="menu-card">
+
+                        <img
+                            src="images/caramel-macchiato.jpg"
+                            alt="Caramel Macchiato"
+                            loading="lazy">
+
+                        <div class="menu-card-content">
+
+                            <h3 data-i18n="product8">Caramel Macchiato</h3>
+
+                            <p data-i18n="product8Description">
+                                Espresso, milk, and a sweet caramel touch.
+                            </p>
+
+                            <span class="price">EGP 110</span>
+
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 9: HOT CHOCOLATE -->
+                    <article class="menu-card">
+
+                        <img
+                            src="images/hot-chocolate.jpg"
+                            alt="Hot Chocolate"
+                            loading="lazy">
+
+                        <div class="menu-card-content">
+
+                            <h3 data-i18n="product9">Hot Chocolate</h3>
+
+                            <p data-i18n="product9Description">
+                                Smooth and comforting chocolate drink.
+                            </p>
+
+                            <span class="price">EGP 90</span>
+
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 10: SPANISH HOT CHOCOLATE -->
+                    <article class="menu-card">
+
+                        <img
+                            src="images/spanish-hot-chocolate.jpg"
+                            alt="Spanish Hot Chocolate"
+                            loading="lazy">
+
+                        <div class="menu-card-content">
+
+                            <h3 data-i18n="product10">Spanish Hot Chocolate</h3>
+
+                            <p data-i18n="product10Description">
+                                Creamy hot chocolate with a sweet Spanish twist.
+                            </p>
+
+                            <span class="price">EGP 105</span>
+
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 11: BLUEBERRY CHEESECAKE -->
+                    <article class="menu-card">
+
+                        <img
+                            src="images/blueberry-cheesecake.jpg"
+                            alt="Blueberry Cheesecake"
+                            loading="lazy">
+
+                        <div class="menu-card-content">
+
+                            <h3 data-i18n="product11">Blueberry Cheesecake</h3>
+
+                            <p data-i18n="product11Description">
+                                Creamy cheesecake topped with blueberries.
+                            </p>
+
+                            <span class="price">EGP 115</span>
+
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 12: BUTTER CROISSANT -->
+                    <article class="menu-card">
+
+                        <img
+                            src="images/butter-croissant.jpg"
+                            alt="Butter Croissant"
+                            loading="lazy">
+
+                        <div class="menu-card-content">
+
+                            <h3 data-i18n="product12">Butter Croissant</h3>
+
+                            <p data-i18n="product12Description">
+                                A flaky and buttery golden pastry.
+                            </p>
+
+                            <span class="price">EGP 75</span>
+
+                        </div>
+                    </article>
+
+                </div>
+
+
+                <p class="price-note" data-i18n="priceNote">
+                    All menu prices are for demonstration purposes only.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- WHY CHOOSE US SECTION -->
+        <section class="features-section section-padding" id="features">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-subtitle" data-i18n="featuresSubtitle">
+                        THE NOIR EXPERIENCE
+                    </p>
+
+                    <h2 data-i18n="featuresTitle">
+                        Why Choose NOIR CAFÉ?
+                    </h2>
+
+                </div>
+
+
+                <div class="features-grid">
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">☕</div>
+
+                        <h3 data-i18n="feature1Title">
+                            Premium Coffee
+                        </h3>
+
+                        <p data-i18n="feature1Description">
+                            A carefully selected coffee experience.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">✦</div>
+
+                        <h3 data-i18n="feature2Title">
+                            Elegant Atmosphere
+                        </h3>
+
+                        <p data-i18n="feature2Description">
+                            A comfortable space with a modern design.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">♡</div>
+
+                        <h3 data-i18n="feature3Title">
+                            Made With Passion
+                        </h3>
+
+                        <p data-i18n="feature3Description">
+                            Every detail is designed with care.
+                        </p>
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- GALLERY SECTION -->
+        <section class="gallery-section section-padding" id="gallery">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-subtitle" data-i18n="gallerySubtitle">
+                        OUR GALLERY
+                    </p>
+
+                    <h2 data-i18n="galleryTitle">
+                        Moments at NOIR
+                    </h2>
+
+                    <p data-i18n="galleryDescription">
+                        Explore the atmosphere and details of our café.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-grid">
+
+                    <img
+                        src="images/gallery/gallery-1.jpg"
+                        alt="Coffee shop atmosphere"
+                        loading="lazy">
+
+                    <img
+                        src="images/gallery/gallery-2.jpg"
+                        alt="Freshly prepared coffee"
+                        loading="lazy">
+
+                    <img
+                        src="images/gallery/gallery-3.jpg"
+                        alt="Chocolate dessert"
+                        loading="lazy">
+
+                    <img
+                        src="images/gallery/gallery-4.jpg"
+                        alt="Elegant cafe experience"
+                        loading="lazy">
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section section-padding" id="contact">
+
+            <div class="container contact-content">
+
+                <p class="section-subtitle" data-i18n="contactSubtitle">
+                    GET IN TOUCH
+                </p>
+
+                <h2 data-i18n="contactTitle">
+                    We Would Love to See You
+                </h2>
+
+                <p data-i18n="contactDescription">
+                    Discover a place where coffee meets elegance.
+                </p>
+
+                <a href="#home" class="primary-btn" data-i18n="contactButton">
+                    Back to Home
+                </a>
+
+                <p class="demo-notice" data-i18n="demoNotice">
+                    This website is a demonstration project. Contact and ordering services are not active.
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">
+                NOIR <span>CAFÉ</span>
+            </a>
+
+            <p data-i18n="footerText">
+                Coffee • Moments • Experience
+            </p>
+
+            <p class="copyright">
+                © <span id="current-year">2026</span> NOIR CAFÉ.
+                <span data-i18n="rights">
+                    All rights reserved.
+                </span>
+            </p>
+
+            <p class="credit">
+                Designed &amp; Developed by NEXORA
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
