@@ -321,4 +321,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     applyLanguage(currentLanguage);
 
+        // HOME BUTTON - INSTANT SCROLL
+
+    document.querySelectorAll('a[href="#home"]').forEach(function (homeLink) {
+
+        homeLink.addEventListener("click", function (event) {
+
+            event.preventDefault();
+
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "instant"
+            });
+
+            closeMenu();
+
+        });
+
+    });
 });
